@@ -39,6 +39,20 @@ public class RegisterActivity extends AppCompatActivity {
         inputEmail = (EditText) findViewById(R.id.email);
         inputPassword = (EditText) findViewById(R.id.password);
 
+        inputEmail.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                inputEmail.setText("");
+            }
+        });
+
+        inputPassword.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                inputPassword.setText("");
+            }
+        });
+
         buttonRegisterUser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
