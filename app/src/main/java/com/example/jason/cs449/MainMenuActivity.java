@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 /**
  * Created by Jason on 2/18/2017.
  */
@@ -15,6 +17,7 @@ import android.widget.Button;
 public class MainMenuActivity extends AppCompatActivity{
 
     private Button buttonLogout;
+    private FirebaseAuth auth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
@@ -26,6 +29,8 @@ public class MainMenuActivity extends AppCompatActivity{
         buttonLogout.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
+
+                FirebaseAuth.getInstance().signOut();
                 startActivity(new Intent(MainMenuActivity.this, LoginActivity.class));
             }
         });
