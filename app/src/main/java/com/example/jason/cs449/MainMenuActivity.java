@@ -19,7 +19,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class MainMenuActivity extends AppCompatActivity{
 
-    private Button buttonLogout;
+    private Button buttonLogout, buttonCalendar;
     private FirebaseAuth auth;
 
     @Override
@@ -28,6 +28,7 @@ public class MainMenuActivity extends AppCompatActivity{
         setContentView(R.layout.activity_main_menu);
 
         buttonLogout = (Button) findViewById(R.id.logout);
+        buttonCalendar = (Button) findViewById(R.id.calendar);
 
         buttonLogout.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -35,6 +36,14 @@ public class MainMenuActivity extends AppCompatActivity{
 
                 FirebaseAuth.getInstance().signOut();
                 startActivity(new Intent(MainMenuActivity.this, LoginActivity.class));
+            }
+        });
+
+        buttonCalendar.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+
+                startActivity(new Intent(MainMenuActivity.this, CalendarActivity.class));
             }
         });
     }

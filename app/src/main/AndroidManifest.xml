@@ -29,6 +29,12 @@
         <activity android:name=".RegisterActivity" >
 
         </activity>
+        <activity android:name=".ProfileSettingActivity">
+
+        </activity>
+        <activity android:name=".CalendarActivity">
+
+        </activity>
     </application>
 
 </manifest>

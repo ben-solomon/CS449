@@ -45,7 +45,7 @@ public class ProfileSettingActivity extends AppCompatActivity {
 
         email = (auth.getCurrentUser().getEmail()).toString().trim();
 
-        save.setOnClickListener(new View.OnClickListener() {
+        save.setOnClickListener(new View.OnClickListener() { //When the save button is clicked, push the user information to the DB.
             @Override
             public void onClick(View v) {
 
@@ -61,7 +61,7 @@ public class ProfileSettingActivity extends AppCompatActivity {
 
     }
     @Override
-    public void onStart() {
+    public void onStart() { //Update the user display settings to their DB settings.
 
         super.onStart();
         ValueEventListener userListener = new ValueEventListener() {

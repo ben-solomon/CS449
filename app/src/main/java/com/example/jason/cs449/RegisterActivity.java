@@ -57,6 +57,7 @@ public class RegisterActivity extends AppCompatActivity {
         });
 
         buttonRegisterUser.setOnClickListener(new View.OnClickListener() {
+            //When clicked. Push user registration information to the DB
             @Override
             public void onClick(View v) {
 
