@@ -22,3 +22,4 @@ public class Event {
         this.date = date;
     }
 }
+// Sweet and simple. I like it. -BS
