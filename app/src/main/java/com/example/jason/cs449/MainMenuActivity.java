@@ -14,11 +14,11 @@ import com.google.firebase.auth.FirebaseAuth;
 /**
  * Created by Jason on 2/18/2017.
  */
-
+// I will sign each of my comments BS (Ben Solomon)
 
 
 public class MainMenuActivity extends AppCompatActivity{
-
+// nice descriptive button names -BS
     private Button buttonLogout, buttonCalendar;
     private FirebaseAuth auth;
 
@@ -47,7 +47,7 @@ public class MainMenuActivity extends AppCompatActivity{
             }
         });
     }
-
+// whats the purpose of the boolean return val? Won't this always return true? -BS
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
@@ -61,7 +61,7 @@ public class MainMenuActivity extends AppCompatActivity{
 
         switch (item.getItemId()) {
             case R.id.event:
-
+// why have the cases if blank? -BS
             case R.id.status:
 
             case R.id.settings:
@@ -75,4 +75,4 @@ public class MainMenuActivity extends AppCompatActivity{
     }
 
 }
-
+// some general comments would be nice, clean code looks good -BS
